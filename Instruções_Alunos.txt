@@ -1,0 +1,28 @@
+~Alunos~
+	Gustavo Dias Apolinario - 2022035911
+	Daniel Augusto Lopes - 2022036160
+	Lorenzo Ventura Vagliano - 2022035938
+
+~Compilação~
+
+	Requisitos: Compilador GCC
+
+	Comando: g++ TP.cpp -o TP
+
+~Execução~
+
+	Comando: ./TP <tamanho_total_cache> <tamanho_linha> <tamanho_grupo> <arquivo_input>
+
+	OBS: O tamanho do grupo define a lógica a ser implementada:
+	-Se tamanho_grupo = tamanho_total_cache/tamanho_linha -> Associatividade Completa
+	-Se tamanho_grupo < tamanho_total_cache/tamanho_linha -> Associatividade por Conjunto
+	-Se tamanho_grupo = 1 Mapeamento Direto
+
+	Um arquivo txt com o input deve ser criado, como indicado na execução.
+
+	Exemplos:
+	Associatividade Completa: ./TP 4096 1024 4 input.txt
+	Associatividade por Conjunto: ./TP 4096 1024 2 input.txt
+	Mapeamento Direto: ./TP 4096 1024 1 input.txt
+
+	AVISO: Como indicado pelo monitor, estamos especificando que estamos calculando o grupo do endereço com o módulo(%) pelo número de grupos, que faz com que o endereço par seja colocado antes do endereço ímpar nos conjuntos.

@@ -131,7 +131,7 @@ int main(int argc, char* argv[]) {
             entry.valid = true;
             entry.address = blockIdentifier;
            
-            unsigned int group_adrr = quantGroup - (blockIdentifier%quantGroup) -1;
+            unsigned int group_adrr = blockIdentifier%quantGroup;
 
             // Se o bloco não estiver na cache2
             if (!hit) {
