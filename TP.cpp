@@ -207,9 +207,9 @@ int main(int argc, char* argv[]) {
                 if (addressStr != "FFFFFFFF")
                     output << std::setw(3) << std::setfill('0') << lineCount << " " << entry.valid << " 0x" << addressStr << std::endl;
                 else
-                    output << std::setw(3) << std::setfill('0') << lineCount << " " << '0' << " 0" << std::endl;
+                    output << std::setw(3) << std::setfill('0') << lineCount << " " << '0' << std::endl;
             } else {
-                output << std::setw(3) << std::setfill('0') << lineCount << " " << entry.valid << " 0" << std::endl;
+                output << std::setw(3) << std::setfill('0') << lineCount << " " << entry.valid << std::endl;
             }
             lineCount++;
         }
