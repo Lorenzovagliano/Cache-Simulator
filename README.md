@@ -1,5 +1,13 @@
 # Cache Memory Simulator
 
+This project is a cache memory simulator implemented in C++. It takes inputs such as the total cache size, line size, group size, and memory access file to simulate different cache memory configurations. The simulator supports three types of cache mappings: Fully Associative, Set Associative, and Direct Mapping.
+
+The program reads memory access patterns from a file and simulates cache hits and misses accordingly. It maintains cache history and outputs the cache states along with hit and miss counts to an output file.
+
+To run the simulator, compile the provided code and execute it with the appropriate command-line arguments specifying the cache configuration and input file.
+
+For detailed instructions on how to use the simulator and interpret the output, refer to the sections below.
+
 ## Compilation
 
 Compiler: GCC
