@@ -27,6 +27,6 @@ A text file with the input must be created, as indicated in the execution.
 Another file with the output (`saida.txt`) will be generated.
 
 Examples:
-Fully Associative: `./TP 4096 1024 4 input.txt`
-Set Associative: `./TP 4096 1024 2 input.txt`
-Direct Mapping: `./TP 4096 1024 1 input.txt`
+- Fully Associative: `./TP 4096 1024 4 input.txt`
+- Set Associative: `./TP 4096 1024 2 input.txt`
+- Direct Mapping: `./TP 4096 1024 1 input.txt`
